@@ -1,13 +1,13 @@
 # K3s Руководство по установке и настройке
 
-## Table of Contents
+## Содержание
 
-- [Chapter 1: Introduction to k3s](#chapter-1-introduction-to-k3s)
-- [Chapter 2: Installing k3s for Production](#chapter-2-installing-k3s-for-production)  
-- [Chapter 3: Configuring k3s](#chapter-3-configuring-k3s)
-- [Chapter 4: Managing k3s Clusters](#chapter-4-managing-k3s-clusters)
-- [Chapter 5: Deploying Applications on k3s](#chapter-5-deploying-applications-on-k3s)
-- [Chapter 6: Conclusion](#chapter-6-conclusion)
+- [Глава 1: Введение в k3s](#chapter-1-introduction-to-k3s)
+- [Глава 2: Установка k3s для продуктива](#chapter-2-installing-k3s-for-production)  
+- [Глава 3: Настройка k3s](#chapter-3-configuring-k3s)
+- [Глава 4: Управление k3s кластером](#chapter-4-managing-k3s-clusters)
+- [Глава 5: Развертывание приложлений в k3s](#chapter-5-deploying-applications-on-k3s)
+- [Глава 6: Заключение](#chapter-6-conclusion)
 
 ## Chapter 1: Introduction to k3s
 
