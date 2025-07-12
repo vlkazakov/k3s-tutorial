@@ -9,41 +9,41 @@
 - [Глава 5: Развертывание приложлений в k3s](#chapter-5-deploying-applications-on-k3s)
 - [Глава 6: Заключение](#chapter-6-conclusion)
 
-## Chapter 1: Introduction to k3s
+## Глава 1: Введение в k3s
 
-K3s (pronounced "kiss") is a lightweight Kubernetes distribution developed by Rancher Labs as a certified Kubernetes conformant platform. It is optimized for edge computing use cases such as IoT devices, Rasberry Pis, edge servers, and other resource-constrained environments.
+K3s — это облегченный дистрибутив Kubernetes, разработанный компанией Rancher Labs в качестве сертифицированной платформы, совместимой с Kubernetes. Он оптимизирован для сценариев использования периферийных вычислений, таких как устройства Интернета вещей, Rasberry Pi, пограничные серверы и другие среды с ограниченными ресурсами.
 
-Some key advantages of k3s are:
+Некоторые ключевые преимущества k3s:
 
-- Easy to install - Installs in less than a minute with a single binary file less than 40MB in size. Does not require an external database.
+  - Простота установки - Устанавливается менее чем за минуту с помощью одного двоичного файла размером менее 40 МБ. Не требует внешней базы данных.
 
-- Lightweight - Built for ARM and x86 architectures. Optimized storage backend uses SQLite instead of etcd. Runs on nodes with just 512MB RAM and 200MB disk space. 
+  - Легкий — создан для архитектур ARM и x86. Оптимизированный бэкенд хранилища использует SQLite вместо etcd. Работает на узлах с 512 МБ ОЗУ и 200 МБ дискового пространства.
 
-- Security focused - Enables mTLS authentication between components by default. Minimal attack surface area.
+  - Ориентированность на безопасность — по умолчанию включает аутентификацию mTLS между компонентами. Минимальная площадь поверхности атаки.
 
-- Operationally simple - Single binary installation. Upgrades are easy rollouts. No node-reboot required. 
+  - Простота в эксплуатации - Единая двоичная установка. Обновления — это простое развертывание. Перезагрузка узла не требуется.
 
-- Cloud native and Kubernetes conformant - Certified conformant with upstream Kubernetes releases. Native support for Helm, Prometheus, Traefik etc.
+  - Соответствие облачным технологиям и Kubernetes — сертифицированное соответствие вышестоящим выпускам Kubernetes. Нативная поддержка Helm, Prometheus, Traefik и т.д.
 
-In this manual, we will learn how to setup, operate and manage production-grade k3s clusters. We will cover topics like installation, configuration, cluster management, deployment of applications and more.
+В этом руководстве мы узнаем, как настраивать, эксплуатировать и управлять кластерами k3s производственного класса. Мы рассмотрим такие темы, как установка, настройка, управление кластером, развертывание приложений и многое другое.
 
-By the end of the manual, you should be able to:
+К концу руководства вы должны уметь:
 
-- Install single and multi-node k3s clusters
+  - Установка одноузловых и многоузловых кластеров k3s
 
-- Secure cluster access with proper authentication
+  - Безопасный доступ к кластеру с надлежащей аутентификацией
 
-- Monitor and manage clusters using native Kubernetes tooling
+  - Мониторинг кластеров и управление ими с помощью нативных инструментов Kubernetes
 
-- Deploy sample applications via kubectl and Helm
+  - Развертывание примеров приложений с помощью kubectl и Helm
 
-- Perform rolling updates and cluster upgrades
+  - Выполнение последовательных обновлений и обновлений кластера
 
-- Troubleshoot common issues
+- Устранение распространенных проблем
 
-The manual is intended for beginners who want to get started with Kubernetes, as well as experienced admins looking to build lightweight clusters. Familarity with Linux, Docker and networking fundamentals will be helpful.
+Руководство предназначено для новичков, которые хотят начать работу с Kubernetes, а также для опытных администраторов, желающих создавать облегченные кластеры. Знакомство с Linux, Docker и основами работы с сетями будет полезным.
 
-Let's get started by first installing a single node k3s cluster on a Linux machine. We will use the installation script method in this example.
+Давайте начнем с установки кластера k3s с одним узлом на компьютере с Linux. В этом примере мы будем использовать метод скрипта установки.
 
 First, update the package index on your Linux machine:
 
