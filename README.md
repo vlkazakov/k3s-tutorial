@@ -1,4 +1,4 @@
-# K3s Detailed Installation and Configuration Tutorial
+# K3s Руководтсво по установке и настройке
 
 ## Table of Contents
 
