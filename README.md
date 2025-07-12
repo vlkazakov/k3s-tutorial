@@ -45,29 +45,29 @@ K3s — это облегченный дистрибутив Kubernetes, раз�
 
 Давайте начнем с установки кластера k3s с одним узлом на компьютере с Linux. В этом примере мы будем использовать метод скрипта установки.
 
-First, update the package index on your Linux machine:
+Во-первых, обновите индекс пакета на вашем компьютере с Linux:
 
 ```
 sudo apt update
 ```
 
-Next, run the installation script provided by k3s to install the single binary:
+Затем запустите установочный скрипт, предоставленный k3s, чтобы установить один двоичный файл:
 
 ```
 curl -sfL https://get.k3s.io | sh -
 ```
 
-This will download the latest release, install it to /usr/local/bin/k3s and run the server.
+Это загрузит последнюю версию, установит ее в /usr/local/bin/k3s и запустит сервер.
 
-Verify that k3s is up and running:
+Убедитесь, что k3s запущен и работает:
 
 ```
 sudo k3s kubectl get nodes
 ```
 
-This should print the node details. The server may take a few seconds to come up. 
+При этом должны быть выведены сведения об узле. Серверу может потребоваться несколько секунд, чтобы он заработал.
 
-That's it! We now have a lightweight Kubernetes cluster running with a single command. In the next chapter we will look at configuration options and installing in production setups.
+Ну вот! Теперь у нас есть облегченный кластер Kubernetes, работающий с помощью одной команды. В следующей главе мы рассмотрим варианты конфигурации и установки в продакшн сетапах.
 
 ## Chapter 2: Installing k3s for Production
 
